@@ -43,11 +43,12 @@
 - [x] .claude/commands/ingest.md — routes to ingest_perf.py or ingest_whatsapp.py
 - [x] .claude/commands/status.md — loads library + runs triage → PAUSE/WATCH/SCALE per active ad
 
-## Phase 6 — Ingest Scripts ⬜
-- [ ] scripts/ingest_perf.py
-- [ ] scripts/ingest_whatsapp.py
-- [ ] scripts/validate_brief.py
-- [ ] scripts/library_query.py
+## Phase 6 — Ingest Scripts ✅
+- [x] scripts/ingest_perf.py — UTF-16 LE BOM detection, tab/comma auto-detect, deduplication, spend total, archive
+- [x] scripts/ingest_whatsapp.py — parses WhatsApp .txt export, groups by date, appends to conversations.csv
+- [x] scripts/validate_brief.py — YAML schema check, required fields, track existence, URL format, date order
+- [x] scripts/library_query.py — joins master + perf_log + conversations; aggregates per-ad metrics for /status
+- Tested: UTF-16 LE (384 rows, 0 spend), UTF-8 comma (109 rows, 59,637 EGP), validate_brief catches 8 empty fields
 
 ## Phase 7 — Status Report Tuning ⬜
 - [ ] /status produces opinionated, traceable output on real data
