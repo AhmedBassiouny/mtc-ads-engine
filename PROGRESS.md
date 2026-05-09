@@ -35,13 +35,13 @@
 - [x] .claude/hooks/pre_csv_write.py (validates objective, placement, char limits, URL, naming convention, budget, schedule)
 - Tested: catches 8 errors in bad CSV; passes clean CSV
 
-## Phase 5 — Slash Commands ⬜
-- [ ] .claude/commands/new_brief.md
-- [ ] .claude/commands/strategy.md
-- [ ] .claude/commands/creative.md
-- [ ] .claude/commands/launch.md
-- [ ] .claude/commands/ingest.md
-- [ ] .claude/commands/status.md
+## Phase 5 — Slash Commands ✅
+- [x] .claude/commands/new_brief.md — scaffolds brief YAML from template + course catalog
+- [x] .claude/commands/strategy.md — validates brief → strategy → critic → saves data/strategies/<id>.md
+- [x] .claude/commands/creative.md — checks strategy → copywriter → critic → saves data/creative/<id>.md
+- [x] .claude/commands/launch.md — checks image links → media buyer → hook validates CSV → critic review
+- [x] .claude/commands/ingest.md — routes to ingest_perf.py or ingest_whatsapp.py
+- [x] .claude/commands/status.md — loads library + runs triage → PAUSE/WATCH/SCALE per active ad
 
 ## Phase 6 — Ingest Scripts ⬜
 - [ ] scripts/ingest_perf.py
