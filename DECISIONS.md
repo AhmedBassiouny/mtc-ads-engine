@@ -32,6 +32,19 @@
 
 ---
 
+## Prompt file summaries (Phase 3)
+
+| File | One-line summary |
+|------|-----------------|
+| `_shared_context.md` | Condensed diagnostic: angle bank, Templates A–E verbatim, retire list, course playbook, kill/scale rules — prepended to every command |
+| `strategy.md` | Strategist who picks 2 angles from the bank, sizes budget against seasonal calendar, and outputs a pre-flight QA checklist |
+| `copywriter.md` | Egyptian 3amiya copywriter who writes 12 hooks (6/angle), paired body copy, 12 image briefs, 4 video scripts, and bilingual landing page |
+| `media_buyer.md` | Meta buyer who outputs a bulk-paste launch CSV with Reels-first placement, correct objective, and naming convention; includes Google Search section if brief requests it |
+| `critic.md` | Skeptical reviewer who branches on input type (A=strategy, B=creative, C=launch CSV) and outputs ✅/⚠️/🛑 blocks — does not auto-block, operator decides |
+| `triage.md` | Daily analyst who reads master.csv + performance_log.csv + conversations.csv and outputs one opinionated PAUSE/WATCH/SCALE recommendation per active ad |
+
+---
+
 ## Pre-write hook validates launch CSVs, not strategy/creative
 
 **Decision:** The `pre_csv_write.py` hook fires only on `data/launches/*.csv` writes, not on strategy or creative markdown files.

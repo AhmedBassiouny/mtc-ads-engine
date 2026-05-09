@@ -22,13 +22,13 @@
 - [x] data/briefs/_template.yaml (operator fills and runs /strategy)
 - [x] requirements.txt (pyyaml) + .venv created
 
-## Phase 3 — Prompt Templates ⬜
-- [ ] prompts/_shared_context.md
-- [ ] prompts/strategy.md
-- [ ] prompts/copywriter.md
-- [ ] prompts/media_buyer.md
-- [ ] prompts/critic.md
-- [ ] prompts/triage.md
+## Phase 3 — Prompt Templates ✅
+- [x] prompts/_shared_context.md (angle bank + Templates A–E verbatim + retire list + course playbook + kill/scale rules)
+- [x] prompts/strategy.md (2 angles, channel split, budget, week-1 schedule, pre-flight checklist)
+- [x] prompts/copywriter.md (12 hooks, paired body copy, 12 image briefs, 4 video scripts, bilingual landing page)
+- [x] prompts/media_buyer.md (bulk-paste launch CSV with Reels-first, naming convention, Google Search section)
+- [x] prompts/critic.md (branches A/B/C by input type; ✅/⚠️/🛑 output; does not auto-block)
+- [x] prompts/triage.md (PAUSE/WATCH/SCALE per active ad; cite diagnostic; powers /status)
 
 ## Phase 4 — Hooks ⬜
 - [ ] .claude/settings.json
