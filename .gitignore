@@ -2,7 +2,9 @@
 .env
 .env.local
 *.local.*
-archive/
+data/archive/
+data/incoming/*
+!data/incoming/.gitkeep
 __pycache__/
 *.pyc
 .pytest_cache/

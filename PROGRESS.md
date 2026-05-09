@@ -8,10 +8,11 @@
 - [x] CLAUDE.md skeleton
 - [x] README.md
 
-## Phase 1 — Data Seeding ⬜
-- [ ] scripts/seed_library.py
-- [ ] scripts/tag_ads.py
-- [ ] data/library/ populated (master.csv, performance_log.csv, conversations.csv)
+## Phase 1 — Data Seeding ✅
+- [x] scripts/seed_library.py
+- [x] scripts/tag_ads.py
+- [x] data/library/ populated (master.csv 113 rows, performance_log.csv 4294 rows, conversations.csv schema)
+- Note: 43 ads auto-tagged; 64 with spend flagged in data/library/untagged_review.csv for manual/AI review
 
 ## Phase 2 — Configuration YAMLs ⬜
 - [ ] config/courses.yaml
