@@ -1,0 +1,40 @@
+# Kill / Scale Rules
+# Source: MTC_Ad_Diagnostic_v1.md §6 "The AI-driven creative loop — Weekly rhythm"
+# These thresholds come directly from the diagnostic's Friday→Monday "Watch and kill" section.
+
+targets:
+  # §1: "Your non-holiday ads averaged ~17–22 EGP"
+  # §2: Job-ad mimicry 13.6 EGP — treat ≤17 as winning
+  cpr_target_egp: 17
+  cpr_acceptable_egp: 22    # above this, flag for review
+  cpr_kill_egp: 30          # above this + min_spend_egp = kill
+
+kill:
+  # §6: "Kill condition: spent ≥80 EGP AND cost-per-conversation > 30 EGP, OR has been live 5 days"
+  min_spend_egp: 80         # must have spent at least this much before killing (avoids killing too early)
+  cpr_threshold_egp: 30     # CPR above this + min_spend met = pause the ad
+  max_days_live: 5          # kill after 5 days regardless of CPR (fatigue prevention)
+  # §1: "if cost-per-conversation rises 30% above its 7-day rolling average, pause it"
+  fatigue_pct_rise: 30      # % rise above 7-day rolling CPR = fatigue signal → pause + refresh
+
+scale:
+  # §6: "Scale winners by duplicating the ad set with 2x budget rather than editing the original"
+  cpr_threshold_egp: 17     # CPR at or below this = scaling candidate
+  min_spend_egp: 80         # need at least this much spend before declaring a winner
+  budget_multiplier: 2.0    # duplicate ad set at this multiplier
+  never_edit_original: true # always duplicate — preserves algorithm learning
+
+review_cadence:
+  # §6 Weekly rhythm
+  diagnose_day: Monday
+  generate_day: Tuesday
+  build_day: Wednesday
+  launch_day: Thursday
+  kill_check_days:
+    - Friday
+    - Saturday
+    - Sunday
+    - Monday
+
+  # §6 Monthly rhythm — ask AI for pattern analysis
+  monthly_review: true

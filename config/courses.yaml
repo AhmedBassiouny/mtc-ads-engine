@@ -1,0 +1,127 @@
+# MTC Course Catalog
+# Source: MTC_Ad_Diagnostic_v1.md §5 "Course track playbook"
+# Every lead_angle and lead_hook reference a proven pattern from the diagnostic.
+
+courses:
+  interior_design:
+    name_ar: "تصميم داخلي وديكور"
+    name_en: "Interior Design & Decor"
+    # §5: "your strongest converting track"
+    lead_angle: dream_to_career
+    lead_hook_template: D   # "نفسك تكون مصمم ديكور محترف وتعرف إزاي تعمل كارير لنفسك..."
+    target_segments:
+      - decor_students
+      - working_pros_career_change
+      - women_35_54       # §2: tiny-sample asymmetric bet noted in diagnostic
+    software:
+      - 3ds Max
+      - AutoCAD
+      - SketchUp
+    blended_cpr_target_egp: 15
+    notes: "Best converting track. Dream-to-career angle works because decor is lifestyle aspiration."
+
+  civil:
+    name_ar: "مدني (إنشاءات وطرق)"
+    name_en: "Civil Engineering (Structures & Roads)"
+    # §5: lead with Segment + Offer
+    lead_angle: specific_course_offer
+    lead_hook_template: A   # "لمهندسي المدني (إنشاءات وطرق).. أقوى عرض بخصم 50% حقيقي!"
+    target_segments:
+      - civil_students
+      - civil_graduates
+      - working_civil_engineers
+    software:
+      - AutoCAD
+      - SAP2000
+      - SAFE
+    blended_cpr_target_egp: 15
+    notes: "Template A (Segment + Offer) CPR 11.1 EGP in diagnostic — best civil hook."
+
+  architecture:
+    name_ar: "عمارة"
+    name_en: "Architecture"
+    # §5: Future-vision + AI angle
+    lead_angle: future_vision_ai
+    lead_hook_template: D   # "ابدأ مستقبلك في العمارة مع MTC.. بذكاء واحترافية!"
+    target_segments:
+      - architecture_students
+      - architecture_graduates
+    software:
+      - Revit
+      - AutoCAD
+      - SketchUp
+      - Lumion
+    blended_cpr_target_egp: 17
+    notes: "AI/BIM framing differentiates MTC from old-school centers. This is MTC's moat — lean in. CPR 11.7 in diagnostic."
+
+  mechanical:
+    name_ar: "ميكانيكا"
+    name_en: "Mechanical Engineering"
+    # §5: Job-ad mimicry — "مطلوب مهندس ميكانيكا يتقن HVAC و Fire Fighting"
+    lead_angle: job_ad_mimicry
+    lead_hook_template: B
+    target_segments:
+      - mechanical_students
+      - mechanical_graduates
+    software:
+      - AutoCAD MEP
+      - Revit MEP
+    blended_cpr_target_egp: 17
+    notes: "Job-ad format (Template B) works because HVAC/Fire Fighting are job-market skills."
+
+  civil_3d:
+    name_ar: "سيفيل ثري دي ومساحة"
+    name_en: "Civil 3D & Surveying"
+    # §5: "First-time-in-Egypt + step-by-step"
+    lead_angle: first_time_egypt
+    lead_hook_template: D   # "لاول مرة في مصر.. هتفهم السيفيل ثري دي..."
+    target_segments:
+      - civil_students
+      - surveyors
+    software:
+      - Civil 3D
+      - AutoCAD
+    blended_cpr_target_egp: 17
+    notes: "Novelty claim works when the course genuinely has limited supply or is rare in Egypt."
+
+  technical_office:
+    name_ar: "مكتب فني"
+    name_en: "Technical Office"
+    # §5: Job-ad mimicry — "مطلوب مهندس مكتب فني محترف"
+    lead_angle: job_ad_mimicry
+    lead_hook_template: B
+    target_segments:
+      - civil_graduates
+      - architectural_graduates
+      - working_engineers
+    software:
+      - AutoCAD
+      - Revit
+      - MS Project
+    blended_cpr_target_egp: 17
+    notes: "Job-ad hook is on-brand: technical office IS a job role. Direct audience-job fit."
+
+  electrical:
+    name_ar: "كهرباء"
+    name_en: "Electrical Engineering"
+    lead_angle: job_ad_mimicry
+    lead_hook_template: B
+    target_segments:
+      - electrical_students
+      - electrical_graduates
+    software:
+      - AutoCAD Electrical
+      - ETAP
+    blended_cpr_target_egp: 17
+    notes: "Limited diagnostic data — mirror mechanical approach until more data."
+
+  cross_track:
+    name_ar: "جميع التخصصات"
+    name_en: "All Tracks"
+    # §5: "use sparingly — they crowd out specific-course ads"
+    lead_angle: group_social
+    lead_hook_template: E   # "جمع اصاحبك واستفيد بخصومات بتوصل 50%"
+    target_segments:
+      - all_engineering_students
+    blended_cpr_target_egp: 20
+    notes: "§5: don't run more than 1-2 cross-track ads at a time. Best for summer group push only."

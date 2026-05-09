@@ -1,0 +1,84 @@
+# Audience Segment Definitions
+# Source: MTC_Ad_Diagnostic_v1.md §2 (angle bank), §5 (course track playbook),
+#         §7 "What this analysis cannot tell you" — notes on demographic gaps.
+
+# These are logical segments for copy targeting (hook language, tone, angle selection).
+# Meta audience setup (interests, age ranges) is in the launch CSV — these are creative personas.
+
+segments:
+  engineering_students:
+    name_ar: "طلاب هندسة"
+    description: "Currently enrolled engineering students (years 1–5)"
+    hook_language: "address as peer, casual 3amiya, emphasize future job readiness"
+    # §3 Template C: "طلاب هندسة والسادة المهندسين يركزو في العرض ده"
+    hook_handles:
+      - "طلاب هندسة"
+      - "طالب في هندسة"
+      - "طالب هندسة"
+    meta_age_range: "18-24"
+    meta_genders: ["male", "female"]
+    notes: "Enroll in friend groups — group discount angle works well here (Template E)."
+
+  fourth_year_students:
+    name_ar: "طلاب السنة الرابعة والخامسة"
+    description: "Final-year students preparing for the job market"
+    hook_language: "urgency around graduation, job-readiness, first job"
+    hook_handles:
+      - "طالب في السنة الرابعة"
+      - "بتتخرج قريب"
+    meta_age_range: "21-24"
+    meta_genders: ["male", "female"]
+    notes: "High intent — about to enter job market. Job-ad mimicry (Template B) resonates strongly."
+
+  new_graduates:
+    name_ar: "خريجين جدد"
+    description: "Graduated in the last 1–2 years, seeking employment or first career step"
+    hook_language: "direct about job market gap, acknowledge the struggle, offer concrete skill"
+    hook_handles:
+      - "مهندس حديث التخرج"
+      - "خريج هندسة"
+    meta_age_range: "22-28"
+    meta_genders: ["male", "female"]
+    notes: "Best match for Template B (مطلوب مهندس...) — reads job ads obsessively."
+
+  working_engineers:
+    name_ar: "مهندسين شغالين"
+    description: "Employed engineers looking to upskill or specialize"
+    hook_language: "professional tone, ROI framing, career advancement"
+    hook_handles:
+      - "السادة المهندسين"
+      - "المهندسين"
+      - "مهندس شغال"
+    meta_age_range: "25-40"
+    meta_genders: ["male", "female"]
+    notes: "Higher intent but smaller pool. Price-anchor and scarcity can work here if framed as professional ROI."
+
+  decor_aspirants:
+    name_ar: "راغبين في الديكور"
+    description: "Non-engineers wanting a career in interior design / decor"
+    hook_language: "dream-to-career framing, aspirational, lifestyle tone"
+    hook_handles:
+      - "نفسك تكون مصمم ديكور"
+      - "اللي بيحب الديكور"
+    meta_age_range: "18-35"
+    meta_genders: ["male", "female"]
+    # §2: "women 35-54 — tiny sample asymmetric bet" — worth testing separately
+    asymmetric_bet: "women_35_54"
+    notes: "§5: strongest converting track. Dream-to-career angle. Also test women 35-54 per §7 demographic gap note."
+
+  women_35_54:
+    name_ar: "سيدات 35-54"
+    description: "Women aged 35–54, likely career-changers into decor/design"
+    hook_language: "empowerment framing, 'it's not too late', practical career outcome"
+    meta_age_range: "35-54"
+    meta_genders: ["female"]
+    # §2: "tiny sample, asymmetric bet" — exactly 1 data point, worth testing
+    notes: "§2 angle bank footnote: asymmetric bet — low cost to test, potentially high payoff."
+
+  gulf_engineers:
+    name_ar: "مهندسين الخليج"
+    description: "Egyptian engineers working in Gulf countries"
+    hook_language: "online delivery emphasis, Gulf market relevance"
+    meta_locations: ["Saudi Arabia", "UAE", "Kuwait", "Qatar"]
+    # §2: Ramadan online (Gulf-inclusive) CPR 25.3 — acceptable for Gulf only
+    notes: "§2: Gulf-inclusive Ramadan campaigns CPR 25.3 — only viable audience for Ramadan online push."

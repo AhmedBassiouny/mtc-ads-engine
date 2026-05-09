@@ -14,12 +14,13 @@
 - [x] data/library/ populated (master.csv 113 rows, performance_log.csv 4294 rows, conversations.csv schema)
 - Note: 43 ads auto-tagged; 64 with spend flagged in data/library/untagged_review.csv for manual/AI review
 
-## Phase 2 — Configuration YAMLs ⬜
-- [ ] config/courses.yaml
-- [ ] config/kill_scale_rules.yaml
-- [ ] config/audience_definitions.yaml
-- [ ] config/seasonal_calendar.yaml
-- [ ] data/briefs/_template.yaml
+## Phase 2 — Configuration YAMLs ✅
+- [x] config/courses.yaml (8 course tracks with lead angles, hook templates, CPR targets)
+- [x] config/kill_scale_rules.yaml (kill ≥80 EGP + CPR >30 OR 5 days live; scale at CPR ≤17)
+- [x] config/audience_definitions.yaml (6 segments with hook handles and meta age ranges)
+- [x] config/seasonal_calendar.yaml (Ramadan, Eid, Summer, with budget multipliers)
+- [x] data/briefs/_template.yaml (operator fills and runs /strategy)
+- [x] requirements.txt (pyyaml) + .venv created
 
 ## Phase 3 — Prompt Templates ⬜
 - [ ] prompts/_shared_context.md

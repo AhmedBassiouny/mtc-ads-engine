@@ -1,0 +1,97 @@
+# Seasonal Calendar — Budget Multipliers & Creative Constraints
+# Source: MTC_Ad_Diagnostic_v1.md §1 findings 1 & 5, §2 angle bank, §4 retire list
+# Dates are approximate — adjust yearly for actual Ramadan/Eid dates.
+
+# IMPORTANT: All multipliers are relative to your baseline daily budget.
+# Example: baseline 100 EGP/day × multiplier 1.5 = 150 EGP/day during that period.
+
+periods:
+  ramadan:
+    # §1 Finding 1: "Ramadan-greeting ads averaged 45–66 EGP per conversation"
+    # §4 Retire list: "🌙 رمضان كريم ياباشمهندسين..." — holiday greeting steals hook slot
+    name: "Ramadan"
+    approximate_months: ["Mar", "Apr"]   # shifts ~11 days earlier each year
+    budget_multiplier: 0.7               # reduce spend — harder to convert during Ramadan
+    creative_constraints:
+      - "DO NOT lead with Ramadan greeting — this is the #1 budget killer (§1)"
+      - "If running Ramadan campaign: lead with offer, mention Ramadan in line 2 or visual only"
+      - "Gulf-inclusive online delivery is acceptable (CPR 25.3 — §2)"
+      - "Avoid Marketplace placement during Ramadan (lower intent browsing)"
+    recommended_angles:
+      - specific_course_offer     # still works if offer-led
+      - group_social              # post-Ramadan group enrollment
+    avoid_angles:
+      - holiday_ramadan           # CPR 56.1 — §2 "retire immediately"
+      - holiday_eid               # CPR 23.9 — §2 "retire holiday-led ads"
+
+  eid_al_fitr:
+    # §2: Eid holiday discount CPR 23.9 — "retire holiday-led ads"
+    # §4: "العيدية السنة من مركز المتحدة بتوصل 50%" — "Eidiya framing obscures price anchor"
+    name: "Eid Al-Fitr"
+    approximate_months: ["Apr", "May"]
+    duration_days: 5
+    budget_multiplier: 0.5              # pause or near-pause — holiday, very low intent
+    creative_constraints:
+      - "DO NOT run Eid-greeting or Eid-gift framing (§4 retire list)"
+      - "If must run: treat as a sale event, not a greeting — lead with % discount"
+    avoid_angles:
+      - holiday_eid
+      - holiday_ramadan
+
+  post_eid_enrollment:
+    # §3 Sample body copy: "سجل معانا كورسات هندسية بعد العيد"
+    # Post-holiday is historically a good enrollment window
+    name: "Post-Eid Enrollment Push"
+    approximate_months: ["May"]
+    duration_days: 14
+    budget_multiplier: 1.3
+    recommended_angles:
+      - specific_course_offer
+      - job_ad_mimicry
+      - dream_to_career
+
+  summer:
+    # §6: Thursday launch — "4–6 ad variants in a single ad set, Messages objective"
+    # §5 Cross-track: "Group + Summer" — "جمع اصاحبك واستفيد بخصومات بتوصل 50%"
+    # §2 Group/social CPR 14.8 — "proven, big spend" (3 ads, 416 convos, 6,167 EGP)
+    name: "Summer Enrollment"
+    approximate_months: ["Jun", "Jul", "Aug"]
+    budget_multiplier: 1.5              # strong season — increase spend
+    recommended_angles:
+      - group_social                    # best summer angle, Template E
+      - specific_course_offer           # course-specific always works
+      - job_ad_mimicry
+    creative_notes:
+      - "Summer group discount is real and social proof is built into the offer mechanic (§3 Template E)"
+      - "Students have free time — higher intent and availability"
+      - "Run 1 cross-track group push + 2 course-specific ads simultaneously"
+
+  new_academic_year:
+    # Back-to-school / new semester = high intent window
+    name: "New Academic Year"
+    approximate_months: ["Sep", "Oct"]
+    budget_multiplier: 1.3
+    recommended_angles:
+      - future_vision_ai
+      - job_ad_mimicry
+      - specific_course_offer
+
+  eid_al_adha:
+    # Similar to Eid Al-Fitr — avoid holiday framing
+    name: "Eid Al-Adha"
+    approximate_months: ["Jun", "Jul"]   # shifts yearly
+    duration_days: 5
+    budget_multiplier: 0.5
+    creative_constraints:
+      - "Same rules as Eid Al-Fitr — avoid holiday-greeting hooks"
+    avoid_angles:
+      - holiday_eid
+
+  baseline:
+    name: "Standard Periods"
+    budget_multiplier: 1.0
+    recommended_angles:
+      - job_ad_mimicry        # CPR 13.6 — best proven angle
+      - specific_course_offer # CPR 15.4 — default for course pushes
+      - future_vision_ai      # CPR 11.7 — scale-worthy
+      - group_social          # CPR 14.8 — proven

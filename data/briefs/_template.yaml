@@ -1,0 +1,71 @@
+# Course Brief Template
+# Copy this file to data/briefs/<course_name>.yaml and fill it in.
+# Then run: /strategy data/briefs/<course_name>.yaml
+#
+# All fields are required unless marked optional.
+
+# ── Course basics ─────────────────────────────────────────────────────────
+course:
+  # Must match a key from config/courses.yaml
+  track: ""                   # e.g. interior_design | civil | architecture | mechanical | civil_3d | technical_office | cross_track
+
+  name_ar: ""                 # Arabic course name as you want it to appear in ads
+  name_en: ""                 # English name for internal reference
+
+  price_egp: 0                # full price before any discount
+  discount_pct: 0             # discount % to feature in ads (e.g. 50)
+  discounted_price_egp: 0     # price_egp × (1 - discount_pct/100) — fill manually
+
+  duration_weeks: 0           # course length
+  delivery: "in_person"       # in_person | online | hybrid
+  location: "Cairo"           # if in_person
+
+  level: ""                   # beginner | intermediate | advanced
+  software:                   # list the primary software taught
+    - ""
+
+# ── Launch parameters ─────────────────────────────────────────────────────
+launch:
+  start_date: ""              # YYYY-MM-DD — when the course intake opens
+  enrollment_deadline: ""     # YYYY-MM-DD — last day to register (used for urgency)
+
+  daily_budget_egp: 0         # per-variant daily budget (strategy will recommend if 0)
+  num_variants: 4             # how many ad variants to launch (default 4 — one per Template A-D)
+
+  channels:                   # which channels to run on
+    - meta                    # always include
+    # - google_search         # add if brief requires Google
+
+  # Primary Meta objective — do NOT change to Post Engagement
+  objective: "Messages"       # Messages | Conversions
+
+# ── Target audience ───────────────────────────────────────────────────────
+audience:
+  primary_segment: ""         # must match a key from config/audience_definitions.yaml
+                              # e.g. fourth_year_students | new_graduates | working_engineers
+
+  secondary_segments:         # optional additional segments to test
+    - ""
+
+  geographic_focus: "Egypt"   # Egypt | Gulf | Egypt + Gulf
+
+# ── Creative brief ────────────────────────────────────────────────────────
+creative:
+  # The main "reason to act now" — used in urgency line of hooks
+  urgency_reason: ""          # e.g. "قبل ما تقفل المجموعة" | "لفترة محدودة" | "قبل بدء الكورس"
+
+  # Unique selling point beyond price — what makes this intake special?
+  usp: ""                     # e.g. "first weekend-only cohort" | "includes portfolio review session"
+
+  # WhatsApp link or landing page URL
+  destination_url: ""         # e.g. https://wa.me/201XXXXXXXXX
+
+  # Optional: if you have image assets ready, list them here
+  # image_assets:
+  #   - path/or/url/to/image.jpg
+
+# ── Notes for the AI ──────────────────────────────────────────────────────
+# Add any context that isn't captured above.
+# e.g. "This is the first time we're running this course, no historical data."
+# e.g. "Avoid mentioning competitor X in the copy."
+notes: ""
