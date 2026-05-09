@@ -1,0 +1,40 @@
+# Test brief — 3DS Max (Interior Design track)
+# Used in the Phase 8 smoke test. All values are realistic but fictional.
+# Run: /strategy tests/fixtures/test_brief_3dsmax.yaml
+
+course:
+  track: interior_design
+  name_ar: "كورس 3DS Max للتصميم الداخلي"
+  name_en: "3DS Max for Interior Design"
+  price_egp: 3000
+  discount_pct: 50
+  discounted_price_egp: 1500
+  duration_weeks: 4
+  delivery: in_person
+  location: Cairo
+  level: intermediate
+  software:
+    - 3ds Max
+    - V-Ray
+
+launch:
+  start_date: "2026-06-01"
+  enrollment_deadline: "2026-06-15"
+  daily_budget_egp: 100
+  num_variants: 4
+  channels:
+    - meta
+  objective: Messages
+
+audience:
+  primary_segment: decor_aspirants
+  secondary_segments:
+    - engineering_students
+  geographic_focus: Egypt
+
+creative:
+  urgency_reason: "قبل ما تقفل المجموعة"
+  usp: "كورس مكثف 4 أسابيع مع مشاريع حقيقية وشهادة معتمدة"
+  destination_url: "https://wa.me/201000000000"
+
+notes: "Smoke test brief — do not use for actual campaigns. Interior design is MTC's strongest converting track per §5 of the diagnostic."

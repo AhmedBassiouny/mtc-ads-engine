@@ -51,16 +51,19 @@
 - Tested: UTF-16 LE (384 rows, 0 spend), UTF-8 comma (109 rows, 59,637 EGP), validate_brief catches 8 empty fields
 
 ## Phase 7 — Status Report Tuning ⬜
-- [ ] /status produces opinionated, traceable output on real data
+- [ ] Run /status on real data with operator
+- [ ] Iterate triage prompt until output is opinionated and traceable (not a data dump)
+- [ ] Operator sign-off
 
-## Phase 8 — End-to-End Smoke Test ⬜
-- [ ] tests/fixtures/test_brief_3dsmax.yaml
-- [ ] tests/smoke_test.md
-- [ ] Full pipeline runs clean
+## Phase 8 — End-to-End Smoke Test ✅ (fixtures ready)
+- [x] tests/fixtures/test_brief_3dsmax.yaml (validates clean)
+- [x] tests/smoke_test.md (full runbook with pass criteria and restore steps)
+- [ ] Operator runs the full pipeline end-to-end
 
-## Phase 9 — Walkthrough Finalization ⬜
-- [ ] WALKTHROUGH.md complete
-- [ ] Tagged v0.1.0
+## Phase 9 — Walkthrough Finalization ✅
+- [x] WALKTHROUGH.md: Part 1 (setup), Part 2 (launch), Part 3 (daily ops), Part 4 (troubleshooting), Part 5 (file reference), Part 6 (updating)
+- [ ] Operator reads and confirms
+- [ ] Tag v0.1.0
 
 ---
 
