@@ -30,9 +30,10 @@
 - [x] prompts/critic.md (branches A/B/C by input type; ✅/⚠️/🛑 output; does not auto-block)
 - [x] prompts/triage.md (PAUSE/WATCH/SCALE per active ad; cite diagnostic; powers /status)
 
-## Phase 4 — Hooks ⬜
-- [ ] .claude/settings.json
-- [ ] .claude/hooks/pre_csv_write.py
+## Phase 4 — Hooks ✅
+- [x] .claude/settings.json (PreToolUse on Write tool)
+- [x] .claude/hooks/pre_csv_write.py (validates objective, placement, char limits, URL, naming convention, budget, schedule)
+- Tested: catches 8 errors in bad CSV; passes clean CSV
 
 ## Phase 5 — Slash Commands ⬜
 - [ ] .claude/commands/new_brief.md
